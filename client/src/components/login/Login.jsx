@@ -32,7 +32,7 @@ const Login = () => {
     }
 
     try {
-        const userResponse = await axios.post("http://localhost:5000/api/users/login", userDetails);
+        const userResponse = await axios.post("https://travel-pin-server.onrender.com/api/users/login", userDetails);
         localStorage.setItem('user', JSON.stringify(userResponse.data));
         setUser(userResponse.data);
         setError(false);

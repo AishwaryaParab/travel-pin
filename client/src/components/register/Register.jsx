@@ -22,7 +22,7 @@ const Register = () => {
     }
 
     try {
-        const user = await axios.post("http://localhost:5000/api/users/register", newUser);
+        const user = await axios.post("https://travel-pin-server.onrender.com/api/users/register", newUser);
         setError(false);
         setSuccess(true);
     } catch(err) {
